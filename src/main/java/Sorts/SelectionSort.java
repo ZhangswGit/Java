@@ -6,7 +6,7 @@ package Sorts;
  * @see SortAlgorithm
  */
 
-public class SelectionSort implements SortAlgorithm {
+public class SelectionSort<T> implements SortAlgorithm {
 
     /**
      * This method swaps the two elements in the array
@@ -39,9 +39,9 @@ public class SelectionSort implements SortAlgorithm {
             }
 
             // Swapping if index of min is changed
-            if (min != i) {
-                swap(arr, i, min);
-            }
+//            if (min != i) {
+//                swap(arr, i, min);
+//            }
         }
 
         return arr;
@@ -54,14 +54,14 @@ public class SelectionSort implements SortAlgorithm {
 
         SelectionSort selectionSort = new SelectionSort();
 
-        Integer[] sorted = selectionSort.sort(arr);
+        Integer[] sorted = null;//selectionSort.sort(arr);
 
         // Output => 1	  4	 6	9	12	23	54	78	231
         SortUtils.print(sorted);
 
         // String Input
         String[] strings = {"c", "a", "e", "b", "d"};
-        String[] sortedStrings = selectionSort.sort(strings);
+        String[] sortedStrings = null;//selectionSort.sort(strings);
 
         //Output => a	b	 c  d	e
         SortUtils.print(sortedStrings);

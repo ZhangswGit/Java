@@ -1,8 +1,6 @@
-/**
- * @author Prateek Kumar Oraon (https://github.com/prateekKrOraon)
- */
+package Others;
+
 import java.util.Scanner;
-import java.lang.Math;
 
 //An implementation of Rabin-Karp string matching algorithm
 //Program will simply end if there is no match

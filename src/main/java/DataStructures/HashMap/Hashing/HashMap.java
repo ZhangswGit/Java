@@ -1,5 +1,6 @@
 package DataStructures.HashMap.Hashing;
 
+import java.util.LinkedList;
 
 class HashMap {
     private int hsize;
@@ -23,20 +24,20 @@ class HashMap {
 
     public void insertHash(int key) {
         int hash = hashing(key);
-        buckets[hash].insert(key);
+        buckets[hash].add(key);
     }
 
 
     public void deleteHash(int key) {
         int hash = hashing(key);
 
-        buckets[hash].delete(key);
+//        buckets[hash].(key);
     }
 
     public void displayHashtable() {
         for (int i = 0; i < hsize; i++) {
             System.out.printf("Bucket %d :", i);
-            buckets[i].display();
+//            buckets[i].display();
         }
     }
 
